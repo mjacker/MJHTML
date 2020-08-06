@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MJHTML</title>
+    <!-- Esta parte deberia estar dentro de un archivo CSS-->
+    <style>
+      a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+</style>
+  </head>
+  <body>
+      <h2>HTML Links</h2>
+      <ul>
+        <li><a href="https://www.google.com">a href="https://www.google.com"</a></li>
+        <li><a href="https://www.google.com" target="_self">a href="https://www.google.com" target="_self"</a> Abre en la misma pestaña.</li>
+        <li><a href="https://www.google.com" target="_blank">a href="https://www.google.com" target="_blank"</a> Abre en una nueva ventana o pestaña.</li>
+        <li><a href="https://www.google.com" target="_parent">a href="https://www.google.com" target="_parent"</a> Abre en un frame.</li>
+        <li><a href="https://www.google.com" target="_top">a href="https://www.google.com" target="_top"</a> (No me funciona)</li>
+        <li><a href="https://www.google.com"><img src="https://cdn.icon-icons.com/icons2/2119/PNG/128/google_icon_131222.png" alt="Icono de google" width="50" height="50"></a> Esta imagen es un enlace a Google.</li>
+        <li><a href="mailto:someone@example.com">href="mailto:someone@example.com"</a> Enviar un correo.</li>
+        <li><button onclick="">https://www.google.com</button> FALTA CORREGIR.</li>
+        <li> Se puede agregar un estilo con color de fondo a los enlaces usando CSS.
+<pre>&lt;style&gt;
+    a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+
+    a:hover, a:active {
+    background-color: red;
+    }
+&lt;/style&gt;
+</pre>
+        </li>
+      </ul>
+      <h2>URLs absolutos y relativos</h2>
+      <ul>
+        <li><a href="https://www.google.com">a href="https://www.google.com"</a> Enlace absoluto, la dirección completa a otra pagina.</li>
+        <li><a href="/carpeta/NombreArchivo.html">a href="/carpeta/NombreArchivo.html"</a> Enlace a otra pagina alojado en la misma web.</li>
+      </ul>
+      <h2>HTML Bookmarks</h2>
+      <ul>
+        <li><h2 id="C4">h2 id="C4"</h2></li>
+        <li><a href="#C4">a href="#C4"</a> Salta donde se encuentra el ID="C4".</li>
+      </ul>
+  </body>
+</html>
