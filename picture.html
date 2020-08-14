@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MJHTML</title>
+  </head>
+  <body>
+    <h2>HTML PICTURE</h2>
+    <picture>
+      <source media="(min-width: 500px)" srcset="multimedia/imagenes/auto.jpg">
+      <source media="(min-width: 250px)" srcset="multimedia/imagenes/frutas.jpg">
+      <img src="multimedia/imagenes/peluche.jpg">
+    </picture>
+
+    El navegador va a utilizar el primer formato que reconozca:
+    <picture>
+      <source srcset="multimedia/imagenes/auto.jpg">
+      <source srcset="multimedia/imagenes/frutas.jpg">
+      <img src="multimedia/imagenes/peluche.jpg" alt="Beatles" style="width:auto;">
+    </picture>
+
+    <a href="index.html#index">Go back to index.</a>
+  </body>
+</html>
