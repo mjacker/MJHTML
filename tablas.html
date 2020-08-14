@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>MJHTML</title>
+    <style media="screen">
+      table, th, td {
+        border:1px solid black;
+      }
+    </style>
   </head>
   <body>
     <h2>HTML TABLAS</h2>
@@ -17,40 +22,141 @@
       </tr>
     </table>
 
+    <!-- Agregar un borde-->
     <h3>Agregar un borde</h3>
     <ul>
     <table style="border:1px solid black">
       <tr>
-        <th> <i style="background-color": lightgreen> border: 1px solid black, (el style va como atributos de TABLE)</th>
+        <th> <i style="background-color: lightgreen"> &lt;table style="border:1px solid black"&gt;</i> </th>
       </tr>
     </table>
     </ul>
 
+    <!-- Bordes colpasados-->
     <h3>Bordes colapsados</h3>
     <ul>
-    <table style="boder-collapse: collapse; border:1px solid black">
-      <tr>
-        <th style="border:1px solid black">titulo, utilizando <i style="background*-color: lightgreen">style="border-collapse: collapse;"</th>
-      </tr>
-      <tr>
-        <td style="border:1px solid black">TEXTO 1</td>
-        <td style="border:1px solid black">TEXTO 2</td>
-      </tr>
+      <table style="border-collapse: collapse; border:1px solid lightgreen">
+        <tr>
+          <th style="border:1px solid lightgreen">titulo, utilizando <i style="background-color: lightgreen">style="border-collapse: collapse;"</th>
+        </tr>
+        <tr>
+          <td style="border:1px solid lightgreen">TEXTO 1</td>
+          <td style="border:1px solid lightgreen">TEXTO 2</td>
+        </tr>
+      </table>
     </ul>
-    </table>
 
+    <!-- Bordes NO colpasados-->
     <h3>Bordes NO colapsados</h3>
     <ul>
-    <table style="border:1px solid black">
+    <table>
       <tr>
-        <th style="border:1px solid black">titulo, utilizando <i style="background*-color: lightgreen">style="border-collapse: collapse;"</th>
+        <th style="border:1px solid lightgreen">titulo, utilizando <i style="background-color: lightgreen">style="border-collapse: collapse;"</i></th>
       </tr>
       <tr>
-        <td style="border:1px solid black">TEXTO 1</td>
-        <td style="border:1px solid black">TEXTO 2</td>
+        <td style="border:1px solid lightgreen">TEXTO 1</td>
+        <td style="border:1px solid lightgreen">TEXTO 2</td>
       </tr>
-    <ul>
+    </table>
+    </ul>
 
+
+    <!-- Agregando rellenos a las celdas (Padding)-->
+    <h3>Agregar rellenos a las celdas (Padding)</h3>
+    <ul>
+      <table>
+        <tr>
+          <th style="padding:30px; background-color:lightgreen">style="padding:30px"</th>
+          <th style="padding:30px;">style="padding:30px"</th>
+        </tr>
+        <tr>
+          <td style="padding:60px">style="padding:60px"</td>
+          <td style="padding:60px; background-color:lightgreen">style="padding:60px"</td>
+        </tr>
+      </table>
+    </ul>
+
+    <!-- Alineacion de titulos-->
+    <h3>Alineaacion de Titulos (left-right)</h3>
+    <ul>
+      <table>
+        <tr>
+          <th style="text-align: left"><i style="background-color: lightgreen;">style="text-align: left"</th>
+        </tr>
+        <tr>
+          <td>Esto es solo un texto dentro de esta celda.</td>
+        </tr>
+      </table>
+      <br>
+      <table>
+        <tr>
+          <th style="text-align: right"><i style="background-color: lightgreen;">style="text-align: right"</th>
+        </tr>
+        <tr>
+          <td>Esto es solo un texto dentro de esta celda.</td>
+        </tr>
+      </table>
+    </ul>
+
+    <!-- agregar espacio a los bordes-->
+    <h3>Agregar espacios entre celdas</h3>
+    <ul>
+      <cite>&lt;table style="border-spacing: 30px"&gt;</cite>
+      <table style="border-spacing: 30px; background-color:lightgreen;">
+        <tr>
+          <th style="background-color:white">TITULO 1</th>
+        </tr>
+        <tr>
+          <td style="background-color:white">TEXTO 1</td>
+        </tr>
+      </table>
+    </ul>
+
+    <!-- Celda que ocupa varias filas o culumnas -->
+    <h3>Celdas que ocupan varias filas o columnas.</h3>
+    <ul>
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th colspan="2" style="background-color:lightgreen;"> Telefonos. &lt;th colspan="2"&gt;</th>
+        </tr>
+        <tr>
+          <td>Jaime Colmán</td>
+          <td>0992250360</td>
+          <td>098444543</td>
+        </tr>
+      </table>
+      <br>
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Telefonos</th>
+        </tr>
+        <tr>
+          <td rowspan="2" style="background-color:lightgreen">Jaime Colmán,<br> &lt;th rowspan="2"&gt;</td>
+          <td>099252360</td>
+        </tr>
+        <tr>
+          <td>0984424543</td>
+        </tr>
+      </table>
+    </ul>
+
+    <!-- Agregar un CAPTION a una tabla-->
+    <h3>Agregar un CAPTION a una tabla</h3>
+    <ul>
+      <table>
+        <caption style="background-color:lightgreen">Esto es un caption</caption>
+        <tr>
+          <th>titulo</th>
+        </tr>
+        <tr>
+          <td>Esto es solo un texto dentro de esta celda.</td>
+        </tr>
+      </table>
+    </ul>
+
+    <!--Volver al Index.html.-->
     <a href="index.html#index">Go back to index.</a>
   </body>
 </html>
