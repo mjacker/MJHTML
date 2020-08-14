@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>MJHTML Listas</title>
+    <style media="screen">
+      table, th, td {
+        border:1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Tipos de listas desordenadas</h3>
+    <ul style="list-style-type: none;">
+      <li>
+        <ul style="list-style-type: circle;">
+         <li>Tipo circulo.</li>
+       </ul>
+      </li>
+      <li>
+        <ul style="list-style-type: square;">
+          <li>tipo cuadrado</li>
+        </ul>
+      </li>
+      <li>
+        <ul style="list-style-type: disc;">
+          <li>tipo disco</li>
+        </ul>
+      </li>
+      <li>
+        <ul style="list-style-type: none;">
+          <li>tipo vacio</li>
+        </ul>
+      </li>
+    </ul>
+    
+    <!-- tipo anidado-->
+    <h3>Tipo anidado</h3>
+    <ul>
+      <li>
+        texto 1
+      </li>
+      <li>
+        <ul>
+          <li>subnivel 1</li>
+          <li>subnivel 1</li>
+        </ul>
+      </li>
+    </ul>
+    <!--mejorar ejemplo en la computadora-->
+    
+    <!-- listas horizontales -->
+    <h3>Listas horizontales usando CSS</h3>
+    <style>
+      ul#UL01{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:#333333;
+      }
+      li#li01{
+        float: left;
+      }
+      a{
+        display:block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        background-color:lightgreen;
+        text-decoration: none;
+      }
+      a:hover{
+        background-color:#111111;
+      }
+    </style>
+    <ul id="UL01">
+      <li id="li01"><a href="#home">Home</a></li>
+      <li id="li01"><a href="#news">News</a></li>
+      <li id="li01"><a href="#contact">Contact</a></li>
+      <li id="li01"><a href="#about">About</a></li>
+    </ul>
+    
+    </body>
+   </html>
