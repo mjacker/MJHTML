@@ -34,6 +34,7 @@
 
 
     <!-- Lista de Etiquetas -->
+    <a href="#abajo">Saltar abajo</a>
     <h2>Ejemplos:</h2>
       <ul>
        <li>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</li>
@@ -124,8 +125,92 @@
 
         <p>Escribir de derecha a izquierda:<br><bdo dir="rtl">This text will be written from right to left</bdo></p>
       </ul>
-      <h2>HTML Links</h2>
+      <h2 id="C4">HTML Links</h2>
       <ul>
+        <li><a href="HTML_Links.html#L1">Esto salta al archivo HTML_Links.html en el id #L1"</a></li>
       </ul>
+
+      <!--######### Esta seccion es de imageenes ##########-->
+      <h2 id="C4">HTML Images</h2>
+        <ul>
+          <li><h3>HTML Images - Styles</h3></li>
+            <ul>
+              <li><img src="https://cdn.icon-icons.com/icons2/2119/PNG/128/google_icon_131222.png" alt="Icono de Google" style="width:48px;height:48px;"></li>
+              <li><img src="https://cdn.icon-icons.com/icons2/2119/PNG/128/google_icon_131222.png" alt="Icono de Google" style="float:right;width:42px;height:42px;"> con 'Style="float:right"</li>
+              <pre> Formatos de imagenes que se pueden utilizar:
+
+          APNG	Animated Portable Network Graphics	   .apng
+          GIF	  Graphics Interchange Format	             .gif
+          ICO	  Microsoft Icon	                         .ico, .cur
+          JPEG	Joint Photographic Expert Group image	 .jpg, .jpeg, .jfif, .pjpeg, .pjp
+          PNG	  Portable Network Graphics	               .png
+          SVG	  Scalable Vector Graphics	               .svg
+              </pre>
+            </ul>
+          <li> <h3>HTML Images Map</h3></li>
+            <ul>
+              img src="https://www.w3schools.com/html/workplace.jpg" usemap="#workmap"
+              <li><img src="https://www.w3schools.com/html/workplace.jpg" usemap="#workmap"></li>
+            </ul>
+            <pre>
+      &lt;map name="workmap"&gt;
+        &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt;
+        &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt;
+        &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"&gt;
+      &lt;/map&gt;
+            </pre>
+            <map name="workmap">
+              <area shape="rect" coords="34,44,270,350" alt="Computer" href="#computer.html">
+              <area shape="rect" coords="290,172,333,250" alt="Phone" href="#phone.html">
+              <area shape="circle" coords="337,300,44" alt="Coffee" href="#coffee.html" onclick="coffeeFunction()">
+            </map>
+            <pre>
+Shape
+You must define the shape of the clickable area, and you can choose one of these values:
+
+rect - defines a rectangular region
+circle - defines a circular region
+poly - defines a polygonal region
+default - defines the entire region
+
+            </pre>
+            <h5 id="computer.html">computer.html</h5>
+            <h5 id="phone.html">phone.html</h5>
+            <h5 id="coffee.html">coffee.html</h5>
+
+            <script>
+             function coffeeFunction(){
+               alert("Hiciste click en una tasa de cafe!")
+             }
+
+            </script>
+          </ul>
+
+      <!--######### Esta seccion es para usar imagenes como fondo ##########-->
+      <h2>HTML Background Images</h2>
+        <ul>
+          <li> <div style="background-image: url('multimedia/imagenes/frutas.jpg'); background-repeat: no-repeat; background-size: 25% 100%;">
+          <p style="color:violet;font-size:250%;"><strong>
+            "este texto tiene fondo <br>
+             tambien en esta parte. <br>
+             y tambien en esta parte.
+           </strong></p>
+        </div></li>
+      </ul>
+
+      <!--######### Esta seccion es para utilizar la etiqeta PICTURE. ##########-->
+      <h2>HTML PICTURE</h2>
+      <ul>
+        <li><a href="picture.html">Ir a Picture.html</a></li>
+      </ul>
+
+      <!--######### Esta seccion es para utilizar la etiqeta PICTURE. ##########-->
+      <h2>HTML TABLAS</h2>
+      <ul>
+        <li><a href="tablas.html">Ir a tablas.html</a></li>
+      </ul>
+
+    <!--######### Etiqueta para saltar al final de página donde estoy trabajando. ##########-->
+    <h6 id="abajo">&lt;llegaste hasta abajo. &gt;</h6>
   </body>
 </html>
