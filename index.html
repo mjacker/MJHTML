@@ -231,6 +231,66 @@ default - defines the entire region
         </li>
       </ul>
 
+      <!-- CLASS and ID -->
+      <h2>Class Attribute, Id Attribute</h2>
+      <ul>
+        <li>
+          Class Attribute:
+    <pre><code>
+      &lt;style&gt;
+      .city {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+      &lt;/style&gt;
+</code></pre>
+        <div class="city">
+        &lt;div class="city"&gt;
+         <h2>&lt;h2>London&lt;h2&gt;<h2>
+         <p>&lt;p>London is the capital of England.&lt;/p&gt;</p>
+             &lt;/style&gt;
+       </div>
+       <cite>Los atributos de clases de "city" dentro de &lt;div&gt;, reemplaza las propiedades de &lt;h2&gt; y de &lt;p&gt;. Tambien sera afectado los demas &lt;div&gt; que tengan el nombre de clase "city".</cite>
+        </li>
+      </ul>
+
+      <ul>
+        <li>Id Attribute:
+          <pre><code>
+          &lt;style&gt;
+          #miCabeza {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+          }
+          &lt;/style&gt;
+        </code></pre>
+
+        <h1 id="miCabeza">&lt; h1 id="miCabeza"&lt;/h1&gt;</h1>
+        <p id="miCabeza">&lt; p id="miCabeza"&lt;/h1&gt;</p>
+        </li>
+        <cite>Solo afecta a las etiquetas que tengas exactamente el nombre de id ya pre-establecido. No puedo afectar a un bloque de etiquetas.</cite>
+      </ul>
+      <style>
+      .city {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+      #miCabeza {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+      }
+      </style>
+
     <!--######### Etiqueta para saltar al final de página donde estoy trabajando. ##########-->
     <h6 id="abajo">&lt;llegaste hasta abajo. &gt;</h6>
   </body>
