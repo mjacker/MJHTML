@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>MJHTML - IFRAME</title>
+    <style>
+    /*Span Properties*/
+    .SP{
+      color:orange;
+    }
+    </style>
+  </head>
+  <body>
+    <h2>IFRAME SINTAXIS</h2>
+    <ul>
+      <p>HTML &lt;iframe&gt; incrusta un documento en el actual documento HTML</p>
+      <pre>
+        <code>
+  &lt;iframe <span class="SP">src</span>="url" <span class="SP">height</span>="150" <span class="SP">width</span>="300" <span class="SP">title</span>="descripcion"&gt;
+  or
+  &lt;iframe <span class="SP">src</span>="url" <span class="SP">style</span>="height:200px;width:300px;" <span class="SP">title</span>="descripcion"&gt;
+        </code>
+      </pre>
+      <iframe src="iframeTest.html" height="150" width="300"></iframe>
+    </ul>
+
+    <!--IFRAME NO BORDER-->
+    <h2>IFRAME NO BORDER</h2>
+    <ul>
+      <pre>
+      <code>
+        &lt;iframe <span class="SP">src</span>="iframeTest.html" <span class="SP">height</span>="150" <span class="SP">width</span>="300" <strong><span class="SP">style</span>="border:none"></strong></iframe>
+      </code>
+    </pre>
+      <iframe src="iframeTest.html" height="150" width="300" style="border:none"></iframe>
+    </ul>
+
+    <!-- abrir un enlace y que su destino sea dentro de un IFRAME-->
+    <h3>IFRAME - TARGET FOR A LINK</h3>
+    <ul>
+      <a href="listas.html" target="iframe_A">Este enlace abre listas.html dentro del iframe.</a><br>
+      <a href="iframeTest.html" target="iframe_A">Volver al ejemplo de iframeTest.html.</a>
+      <iframe src="iframeTest.html" height="150" width="300" name="iframe_A" ></iframe>
+    </ul>
+
+    <a href="index.html">Volver a Index.html</a>
+  </body>
+</html>
