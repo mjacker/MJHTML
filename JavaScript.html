@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>MJHTML - JavaScript</title>
+    <style>
+    code{
+      background-color:lightgray;
+    }
+    .code{
+      background-color:lightgray;
+    }
+    </style>
+  </head>
+  <body>
+
+    <!--Saltar Entre Paginas - ENCABEZADO -->
+      <div style="background-color:lightblue;display: inline"><a href="index.html">Index.html</a></div>
+      <div id="AlComienzo"style="background-color:lightgreen;display:inline"><a href="#AlFinal">Ir al final.</a></div>
+    <!--Saltar Entre Paginas - ENCABEZADO -->
+
+    <!-- JavaScript-->
+    <h2>JavaScript</h2>
+      <ul>
+        <!--Este boton es para activar el JavaScript-->
+        <button type="button" onclick="document.getElementById('fecha').innerHTML = Date()"> Click aquí para mostrar la Hora y la Fecha.</button>
+        <!-- aquí se reemplazará el valor dentro de P-->
+        <p id="fecha">Aquí aparecera la fecha y la hora.</p>
+
+        <div class="code">
+          <pre>
+
+        &lt;p id="fecha"&gt;Aquí aparecera la fecha y la hora.&lt;/p&gt;
+
+        &lt;button type="button" onclick="document.getElementById('fecha').innerHTML =
+        Date()"&gt; Click aquí para mostrar la Hora y la Fecha.&lt;/button&gt;
+          </pre>
+        </div>
+
+        <p>tambien se puede presentar dentro de etiquedas &lt;script&gt;</p>
+        <div class="code"><pre>
+          &lt;p id="hola">&lt;/p&gt;
+
+          &lt;script&gt;
+          document.getElementById("hola").innerHTML = "Hello JavaScript!";
+          &lt;/script&gt;
+        </pre></div>
+        </ul>
+
+    <!-- Cambiar el Style por su ID-->
+    <h2>Cambiar el "Style" por su ID</h2>
+    <ul>
+      <p id="parrafo">&lt;p id="Parrafo"&gt;TEXTO. &lt;/p&gt;</p>
+
+      <script>
+        document.getElementById("parrafo").style.fontSize = "25px";
+        document.getElementById("parrafo").style.color = "red";
+        document.getElementById("parrafo").style.backgroundColor = "yellow";
+      </script>
+      <!--Mostrando código en la pagina-->
+      <div class="code"><pre>
+      &lt;script&gt; <br>
+        document.getElementById("parrafo").style.fontSize = "25px"; <br>
+        document.getElementById("parrafo").style.color = "red"; <br>
+        document.getElementById("parrafo").style.backgroundColor = "yellow"; <br>
+      &lt;/script&gt;
+    </pre></div>
+    </ul>
+
+    <!-- Funciones-->
+    <h2>JavaScript - Funcion</h2>
+    <ul>
+      <!--p>Aqui el JavaScript cambia el valor de SRC recurso atributo de una imagen.</p-->
+      <img id="miImagen" src="multimedia/imagenes/SinImagen.jpg" alt=" Imagen no disponible.jpg" width="300" height="200"></img>
+      <script>
+        function cambio(sw)
+        {
+          var foto;
+          if (sw == 0 ){
+            foto = "multimedia/imagenes/frutas.jpg"
+          } else if (sw == 1 ) {
+            foto = "multimedia/imagenes/auto.jpg"
+          } else {
+            foto = "multimedia/imagenes/SinImagen.jpg"
+          }
+          document.getElementById('miImagen').src = foto;
+        }
+      </script>
+      <p>
+        Click para elegir:
+    <button type="button" onclick="cambio(1)">Auto</button>
+    <button type="button" onclick="cambio(0)">Frutas</button>
+    <button type="button" onclick="cambio(2)">Sin imagen</button>
+    </p>
+    </ul>
+
+    <!-- Si el navegador no soporta JavaScript-->
+    <h2>JavaScript - noscript</h2>
+    <ul>
+      <p>Si el navegador no soporta JavaScript, puedes mostrar un mensaje con &lt;noscript&gt;</p>
+
+      <div id="noscript" style="background-color: lightgreen;display:inline-block;font-size:25px"></div>
+
+      <script>
+        document.getElementById("noscript").innerHTML = "Tu navegador soporta JavaScript!"
+      </script>
+      <div class="code"><pre>
+        &lt;script&gt;
+          document.getElementById("demo").innerHTML = "Tu navegador soporta JavaScript!";
+        &lt;/script&gt;
+
+        &lt;noscript>Lo siento, tu navegador no soporta JavaScript.!&lt;/noscript&gt;
+      </pre></div>
+    </ul>
+
+    <!-- Usar JavaScript desde un archivo Externo .js -->
+    <h2>Usar JavaScript desde un archivo Externo .js</h2>
+    <ul>
+      <code>&lt;script src="js/MJScript.js"&gt;&lt;/script&gt;</code>
+      <script src="js/MJScript.js"></script>
+    </ul>
+
+    <!-- JavaScript output -->
+    <h2>JavaScript Output</h2>
+    <ul>
+      <li><h3>innerHTML</h3>
+        <p>Para acceder a un elemento se usa método <code>document.getElementById(id)</code>.</p>
+        <p>El <code class="code">id</code> define el atributo del elemento. El <code>innerHTML</code> define el contenido.</p>
+
+        <p id="innerHTML"></p>
+
+        <script>
+          document.getElementById("innerHTML").innerHTML = 5 + 6;
+        </script>
+        <div class="code"><pre>
+          &lt;p id="innerHTML"&gt;
+
+          &lt;script&gt;
+            document.getElementById("innerHTML").innerHTML = 5 + 6;
+          &lt;/script&gt;
+        </pre></div>
+      </li>
+      <li>
+        <h3>document.write()</h3>
+        <p>Solo para realizar pruebas, <blockquote>Si se utiliza despues de cargar el HTML, borrará todo el contenido!.</blockquote></p>
+
+        <script>
+          document.write(5+6);
+        </script>
+        <div class="code"><pre>
+          &lt;script&gt;
+            document.write(5+6);
+          &lt;/script&gt;
+        </pre></div>
+
+      </li>
+      <li>
+        <h3>window.alert()</h3>
+        <p>Para mostrar una alerta desde un cuadro de diálogo.</p>
+
+        <button type="button" onclick="alerta()">Click aqui para mostrar una alerta!.</button>
+        <script>
+          function alerta(){
+            window.alert("ESTO ES UNA ALERTA!!!.");
+          }
+        </script>
+        <div class="code"><pre>
+        &lt;button type="button" onclick="alerta()"&gt;Click aqui para mostrar una alerta!.&lt;/button&gt;<br>
+        &lt;script&gt;
+          function alerta(){
+            window.alert("ESTO ES UNA ALERTA!!!.");
+          }
+        &lt;/script&gt;
+        </pre></div>
+        <cite> El keyword <code>window</code> puede ser omitido. </cite>
+        <div class="code">
+          alert("ESTO ES UNA ALERTA!!!.");
+        </div>
+
+        <!--codigo-->
+        <div class="code"><pre>
+          &lt;script&gt;
+          function alerta(){
+            alert("ESTO ES UNA ALERTA!!!.");
+          }
+      &lt;/script&gt;
+        </pre></div>
+      </li>
+
+      <li>
+        <h3>console.log</h3>
+        <p>Es con el propósito de depurar, y se utiliza en la consola del navegador para mostrar datos.</p>
+
+        <script>
+          console.log("Texto en consola.")
+        </script>
+
+        <!--codigo-->
+        <div class="code"><pre>
+          &lt;script&gt;
+            console.log("Texto en consola.")
+          &lt;/script&gt;
+        </pre></div>
+      </li>
+      <li>
+        <h3>window.print()</h3>
+        <p>No se puede acceder a disposivos de salidas desde JavaScript,
+         a exepción de un método para imprimir el contenido de la ventana actual.</p>
+
+         <button onclick="window.print()">Preciona aquí para imprimir.</button>
+      </li>
+    </ul>
+
+<!--FINAL DE LA PAGINA-->
+<!--Saltar Entre Paginas - PIE DE PAGINA -->
+  <div style="background-color:lightblue;display: inline"><a href="index.html">Index.html</a></div>
+  <div id="AlFinal"style="background-color:lightgreen;display:inline"><a href="#AlComienzo">Ir al comienzo.</a></div>
+<!--Saltar Entre Paginas - PIE DE PAGINA -->
+
+  </body>
+</html>
