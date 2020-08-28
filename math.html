@@ -1,0 +1,189 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MJHTML</title>
+    <style>
+      body{background-color: #ccffcc;}
+      h1,h2, h3, h4, h5{color:#000099}
+    </style>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+
+    <!--Santar Entre Paginas - ENCABEZADO -->
+      <div style="background-color:lightblue;display: inline"><a href="index.html">Index.html</a></div>
+      <div id="AlComienzo"style="background-color:lightgreen;display:inline"><a href="#AlFinal">Ir al final.</a></div>
+    <!--Santar Entre Paginas - ENCABEZADO -->
+
+    <!--math-->
+    <h2>MATH</h2>
+    <p>Debido a que estoy estudiando pre-calculo, tengo la curiosidad de como hacer para representar expresiones matematicas en el navegador.</p>
+
+    <p>Así que empezare a invertigar las opciones con respecto a la etiqueta &lt;math&gt; o similares.</p>
+
+    <h2>Ejemplos</h2>
+
+
+
+    <math> <!--xmlns="http://www.w3.org/1998/Math/MathML" -->
+      <mrow>
+        <mi> x </mi>
+        <mo> + </mo>
+        <mrow>
+          <mi> a </mi>
+          <mo> / </mo>
+          <mi> b </mi>
+        </mrow>
+      </mrow>
+    </math>
+
+<br>
+
+  <math>
+    <mrow>
+      <mo> ( </mo>
+        <mrow>
+          <mi> x </mi>
+          <mo> , </mo>
+          <mi> y </mi>
+        </mrow>
+        <mo> ) </mo>
+    </mrow>
+  </MATH>
+<br>
+
+  <math>
+    <mrow>
+      <mrow>
+        <mn> 2 </mn>
+        <mo> &#x2062;<!--INVISIBLE TIMES--> </mo>
+        <mi> x </mi>
+      </mrow>
+      <mo> + </mo>
+      <mi> y </mi>
+      <mo> - </mo>
+      <mi> z </mi>
+    </mrow>
+  </math>
+
+<br>
+
+  <math>
+    <mfrac>
+      <mn> 1 </mn>
+      <mrow>
+        <msup>
+          <mi> x </mi>
+          <mn> 3 </mn>
+        </msup>
+        <mo> + </mo>
+        <mfrac>
+          <mi> x </mi>
+          <mn> 3 </mn>
+        </mfrac>
+      </mrow>
+    </mfrac>
+    <mo> = </mo>
+  </math>
+
+  <math>
+    <mfrac bevelled="true">
+      <mn> 1 </mn>
+      <mrow>
+        <msup>
+          <mi> x </mi>
+          <mn> 3 </mn>
+        </msup>
+        <mo> + </mo>
+        <mfrac>
+          <mi> x </mi>
+          <mn> 3 </mn>
+        </mfrac>
+      </mrow>
+    </mfrac>
+  </math>
+
+<br>
+  <math>
+    <mfrac>
+      <mrow>
+        <mn> 1 </mn>
+        <mo> + </mo>
+        <msqrt>
+          <mn> 5 </mn>
+        </msqrt>
+      </mrow>
+      <mn> 2 </mn>
+    </mfrac>
+  </math>
+</math>
+
+  <!-- MI - identificador-->
+  <h3>Token Elements - mi - identificador</h3>
+  <math>
+    <mi> x </mi>
+    <mi> y </mi>
+    <mi> z </mi>
+    <mi> A </mi>
+    <mi> D </mi>
+    <mi> sin </mi>
+    <mi mathvariant='script'> L </mi>
+  </math>
+
+  <!-- Number -->
+  <h3>Number &lt;mn&gt;</h3>
+  <math>
+    <mn> 2 </mn><br>
+    <mn> 0.123 </mn><br>
+    <mn> 1,000,000 </mn><br>
+    <mn> 2.1e10 </mn><br>
+    <mn> 0xFFEF </mn><br>
+    <mn> MCMLXIX </mn><br>
+    <mn> twenty one </mn>
+  </math>
+
+  <!--Operators-->
+  <h3>Operator, Fence, Separator or Accent &lt;mo&gt;</h3>
+  <math>
+    <mo> + </mo><br>
+    <mo> - </mo><br>
+    <mo> * </mo><br>
+    <mo> / </mo>    <br>
+    <mo> &le; </mo><br>
+    <mo> &lt; </mo><br>
+    <mo> &lt;= </mo>
+
+    <!-- TEXT mtext -->
+    <h3>Text &lt;mtext&gt;</h3>
+    <math>
+      <mtext> Theorem 1: </mtext>
+      <mtext> &#x2009;<!--THIN SPACE--> </mtext>
+      <mtext> &#x205F;&#x200A;<!--space of width 5/18 em-->&#x205F;&#x200A;<!--space of width 5/18 em--> </mtext>
+      <mtext> /* a comment */ </mtext>
+    </math>
+
+    <!-- Space -->
+    <h3>MSpace &lt;mtext&gt;</h3>
+    <math>
+      <mspace height="3ex" depth="2ex"/>
+      <mrow>
+      <mi>a</mi>
+      <mo id="firstop">+</mo>
+      <mi>b</mi>
+      <mspace linebreak="newline" indentalign="id" indenttarget="firstop"/>
+      <mo>+</mo>
+      <mi>c</mi>
+    </mrow>
+    </math>
+
+
+  </math>
+    <br>
+    <!--FINAL DE LA PAGINA-->
+    <!--Saltar Entre Paginas - PIE DE PAGINA -->
+      <div style="background-color:lightblue;display: inline"><a href="index.html">Index.html</a></div>
+      <div id="AlFinal"style="background-color:lightgreen;display:inline"><a href="#AlComienzo">Ir al comienzo.</a></div>
+    <!--Saltar Entre Paginas - PIE DE PAGINA -->
+  </body>
+</html>
