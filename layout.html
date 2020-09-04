@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>MJHTML - LAYOUT - RESPONSIVE</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        /*box-sizing: border-box se utiliza
+        para mantener el manaño del contorno, y las variaciones
+        con padding solo afecta en el interior*/
+      }
+      body{
+        background-color: #ccffcc;
+        margin: 0px;
+      }
+
+      /*Style the header*//* Cabecera */
+      header{
+        background-color:skyblue;
+        padding: 10px;
+        margin: 0px;
+        text-align: left;
+      }
+
+      /* Para navegar entre paginas*/
+      nav {
+        float: left;
+        width:20%;
+        background-color: pink;
+      }
+      .navitem {
+        padding: 8px;
+        margin-top: 7px;
+        border-bottom: 1px solid #f1f1f1;
+      }
+
+      article {
+        float: left;
+        width:60%;
+        background-color:tomato;
+      }
+
+      aside {
+        float:right;
+        background-color: pink;
+        width:20%;
+      }
+
+      footer{
+        background-color:skyblue;
+        padding:10px;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media(max-width: 600px) {
+        nav, article, aside {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--Santar Entre Paginas - ENCABEZADO -->
+<!--Santar Entre Paginas - ENCABEZADO -->
+
+    <header>
+      <div style="background-color:lightblue;display: inline"><a href="index.html">Index.html</a></div>
+      <div id="AlComienzo"style="background-color:lightgreen;display:inline"><a href="#AlFinal">Ir al final.</a></div>
+    </header>
+
+  <section style="overflow:auto">
+    <nav>
+      <div class="navitem"><a href="index.html">Home</a></div>
+      <div class="navitem"><a href="JavaScript.html">JavaScript.</a></d>
+    </nav>
+
+    <article>
+      <h2>Titulo de articulo</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+      <img id="miImagen" src="multimedia/imagenes/auto.jpg" alt=" Imagen no disponible.jpg" width="100%"></img>
+    </article>
+    <aside>
+      <h3>Barra lateral derecha</h3>
+      <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. </p>
+    </aside>
+  </section>
+
+
+
+  <footer>
+    <div style="background-color:lightblue;display: inline"><a href="index.html">Index.html</a></div>
+    <div id="AlFinal"style="background-color:lightgreen;display:inline"><a href="#AlComienzo">Ir al comienzo.</a></div>
+  </footer>
+
+
+</body>
+</html>
