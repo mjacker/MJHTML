@@ -30,40 +30,69 @@ nav{
 }
 
 section{
-  background-color: orange;
+  float:left;
+  background-color: lightgreen;
   /*display:block;*/
   /*overflow: auto;*/
-  display:block;
-}
-
-.navLeft{
-  color:white;
-  padding: 10px 30px 10px 20px;
-  float: left;
-  width:20%;
-  background-color: lightgreen;
-}
-
-.navLeftItem{
-  background-color: tomato;
-  padding: 8px;
-  margin-top: 7px;
-  border-bottom: 1px solid #f1f1f1;
-}
-
-.navLeft a{text-decoration:none;color:white;}
-
-.imgcenter{
-  float: left;
-  width:60%;
-  background-color: purple;
   display: block;
+  border-bottom: 2px solid green;
 }
 
-.imgcenter img{
-  width:100%;
-}
+/*Configuracion de elementos dentro de section, lado izquierdo*/
+  .navLeft{
+    color:white;
+    padding: 10px 30px 10px 20px;
+    float: left;
+    width:20%;
+    background-color: lightgreen;
+  }
+  .navLeftItem{
+    background-color: tomato;
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .navLeft a{text-decoration:none;color:white;}
+/*/FIN Configuracion de elementos dentro de section, lado izquierdo*/
 
+
+/*Configuracion de elementos dentro de imgcenter*/
+  .imgcenter{
+    float: left;
+    width:60%;
+    background-color: #lightgreen;
+    display: block;
+  }
+  .imgcenter-inside-photo {
+    float: left;
+    width: 35%;
+    background-color: green;
+    padding: 5px;
+  }
+  .imgcenter-inside-text{
+    float: left;
+    width: 65%;
+    height: 100%;
+    display: inline;
+    background-color: lightblue;
+    padding: 5px;
+  }
+  .imgcenter h2{
+    padding: 0px 0px 0px 15px;
+  }
+  .imgcenter img{
+    width: 100%;
+    background-color: yellow;
+    padding: 3px;
+  }
+  .imgcenter p{
+    float: left;
+    display: inline-block;
+    background-color: lightblue;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+/* /Fin de configuracion de elementos dentro de imgcenter*/
 
 
 
@@ -73,12 +102,16 @@ aside{
   float: left;
   width:20%;
   display: block;
+  padding: 10px 30px 10px 20px;
 }
 
 main{
-  background-color: pink;
+  display: block;
+  border: solid 2px black;
+  background-color: tomato;
   color:white;
-  padding: 10px 30px 50px 20px;
+  /*padding: 10px 30px 50px 20px;*/
+  padding:auto;
 }
 
 article{

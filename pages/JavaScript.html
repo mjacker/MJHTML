@@ -71,17 +71,17 @@
     <h2>JavaScript - Funcion</h2>
     <ul>
       <!--p>Aqui el JavaScript cambia el valor de SRC recurso atributo de una imagen.</p-->
-      <img id="miImagen" src="multimedia/imagenes/SinImagen.jpg" alt=" Imagen no disponible.jpg" width="300" height="200"></img>
+      <img id="miImagen" src="../multimedia/imagenes/SinImagen.jpg" alt=" Imagen no disponible.jpg" width="300" height="200"></img>
       <script>
         function cambio(sw)
         {
           var foto;
           if (sw == 0 ){
-            foto = "multimedia/imagenes/frutas.jpg"
+            foto = "../multimedia/imagenes/frutas.jpg"
           } else if (sw == 1 ) {
-            foto = "multimedia/imagenes/auto.jpg"
+            foto = "../multimedia/imagenes/auto.jpg"
           } else {
-            foto = "multimedia/imagenes/SinImagen.jpg"
+            foto = "../multimedia/imagenes/SinImagen.jpg"
           }
           document.getElementById('miImagen').src = foto;
         }
